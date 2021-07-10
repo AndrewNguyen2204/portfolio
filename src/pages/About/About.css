@@ -1,0 +1,28 @@
+.about .about-img,
+.about .about-text {
+  padding: 0 15px;
+}
+.about-img .img-box {
+  max-width: 380px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.about-img .img-box img {
+  width: 100%;
+}
+.about-text h3 {
+  text-transform: capitalize;
+  font-size: 20px;
+  margin: 20px 0;
+}
+.about-text .skill-item {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 5px 15px;
+  text-transform: capitalize;
+  margin: 0 10px 10px 0;
+  border-radius:20px;
+}

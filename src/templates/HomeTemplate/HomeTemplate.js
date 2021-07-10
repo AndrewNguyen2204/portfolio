@@ -1,6 +1,11 @@
 
 import { Route } from "react-router-dom";
 import "./HomeTemplate.css";
+import Header from "./Layout/Header";
+
+
+
+
 
 export const HomeTemplate = (props) => {
 
@@ -11,6 +16,7 @@ export const HomeTemplate = (props) => {
     return <Route {...restProps} render={propsRoute => {
         return <div className="homeTemplate-container">
             <div className="homeTemplate-content">
+                <Header />
                 <Component {...propsRoute} />
             </div>
             <div className="planet planet_1">
