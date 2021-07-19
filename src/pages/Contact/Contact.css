@@ -1,0 +1,7 @@
+.text-box {
+    margin-bottom: 20px;    
+}
+.text-box span {
+    text-transform: capitalize;
+    font-weight: 600;    
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../../components/Button/Button';
 import './About.css';
 export default function About(props) {
     return (
@@ -11,7 +12,7 @@ export default function About(props) {
             <div className="row">
                 <div className="about-img w-1/2">
                     <div className="img-box">
-                        <img src="./images/IMG_E0025.jpg" alt="about-image" />
+                        <img src="./images/IMG_E0025.png" alt="about-image" />
                     </div>
                 </div>
                 <div className="about-text w-1/2">
@@ -24,6 +25,10 @@ export default function About(props) {
                         <div className="skill-item">Sass/Scss</div>
                         <div className="skill-item">ReactJs</div>
 
+                    </div>
+                    <div className="about-button row mt-5">
+                        <Button type='btn--glass'>download cv</Button>
+                        <Button type='btn--glass'>portfolio</Button>
                     </div>
                 </div>
             </div>

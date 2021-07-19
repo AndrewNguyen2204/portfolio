@@ -14,7 +14,7 @@
 }
 .home .img-box img {
   width: 100%;
-  transform: translateY(-80px);
+  transform: translateY(50px);
 }
 .home .home-text{
     color: #0D0448;
@@ -32,33 +32,7 @@
 .home .home-button {
   margin-top: 20px;
 }
-.home .home-button button {
-  cursor: pointer;
-  padding: 5px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 30px;
-  color: purple;
-  margin-right: 5px;
-  position: relative;
-  transition: color 0.3s;
-  overflow: hidden;
+.home .home-button button {  
+  margin-right: 5px;  
 }
-.home .home-button button:after {
-  position: absolute;
-  top: 0;
-  left: 0;
 
-  content: "";
-  width: 0;
-  height: 100%;
-  background: purple;
-  z-index: -1;
-  transition: width 0.3s;
-}
-.home .home-button button:hover {
-  color: white;
-}
-.home .home-button button:hover:after {
-  width: 100%;
-}

@@ -3,6 +3,10 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+
+
+
+
 /*
 ------------------------------------
 Global Settings
@@ -27,6 +31,12 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+.glass{
+  background: linear-gradient(to right bottom,rgba(255,255,255,0.25),rgba(255,255,255,0.1));
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Page Title */

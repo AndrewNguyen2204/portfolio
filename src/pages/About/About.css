@@ -9,9 +9,11 @@
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   overflow: hidden;
+
 }
 .about-img .img-box img {
   width: 100%;
+  transform: rotateY(180deg);
 }
 .about-text h3 {
   text-transform: capitalize;
@@ -25,4 +27,7 @@
   text-transform: capitalize;
   margin: 0 10px 10px 0;
   border-radius:20px;
+}
+.about-button button {
+  margin-right: 5px;
 }

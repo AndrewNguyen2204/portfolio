@@ -1,0 +1,31 @@
+.btn {
+  cursor: pointer;
+  padding: 5px 20px;
+  border-radius: 30px;
+  text-transform: capitalize;
+}
+.btn--glass {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.25);
+  color: purple;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.btn--glass:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: purple;
+  z-index: -1;
+  transition: width 0.3s;
+}
+.btn--glass:hover {
+  color: white;
+}
+.btn--glass:hover:after {
+  width: 100%;
+}

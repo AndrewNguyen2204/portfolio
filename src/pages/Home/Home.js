@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../../components/Button/Button';
 import './Home.css';
 
 export default function Home(props) {
@@ -10,13 +11,13 @@ export default function Home(props) {
                     <h1>NGUYEN HUU <span>MINH ANH</span></h1>
                     <h2>Front-end Developer</h2>
                     <div className="home-button">
-                        <button>About Me</button>
-                        <button>Porfolio</button>
+                        <Button type='btn--glass'>About Me</Button>
+                        <Button type='btn--glass'>Porfolio</Button>
                     </div>
                 </div>
                 <div className="home-img  w-1/2 h-full">
                     <div className="img-box mx-auto">
-                        <img src="./images/IMG_6739.jpg" alt="IMG_6739.jpg"/>
+                        <img src="./images/IMG_E0025.png" alt="IMG_6739.jpg" />
                     </div>
                 </div>
             </div>
