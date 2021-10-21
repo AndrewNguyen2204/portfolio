@@ -29,5 +29,5 @@
   border-radius:20px;
 }
 .about-button button {
-  margin-right: 5px;
+  @apply mr-5 mb-5;
 }

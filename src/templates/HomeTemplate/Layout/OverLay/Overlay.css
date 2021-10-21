@@ -1,0 +1,16 @@
+.overlay-wrapper {
+  @apply fixed w-full h-full top-0 left-0 z-20 pointer-events-none hidden lg:block;
+}
+.overlay-wrapper .overlay-object {
+  @apply absolute;
+}
+
+.overlay-wrapper .overlay-object:first-child {
+  left: 10%;
+  top: 20%;
+}
+
+.overlay-wrapper .overlay-object:last-child { 
+  right: 15%;
+  bottom: 15%;
+}

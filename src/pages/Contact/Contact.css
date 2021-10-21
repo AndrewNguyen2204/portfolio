@@ -1,7 +1,46 @@
-.text-box {
-    margin-bottom: 20px;    
+.contact .contact-form .input-group {
+  @apply w-full mb-8;
 }
-.text-box span {
-    text-transform: capitalize;
-    font-weight: 600;    
+
+.contact .contact-form .input-control {
+  @apply block w-full h-[50px] rounded-[25px] bg-white/25 px-[20px] text-[color:var(--text-color)] font-normal border border-transparent duration-300 ease-in-out;
+}
+.contact .contact-form .input-control:focus, .contact .contact-form .input-control:hover{
+    @apply border-white/60 shadow-lg bg-white/40;
+}
+.contact .contact-form .input-control:placeholder {
+  @apply opacity-80 font-light  text-[color:var(--text-color)];
+}
+
+.contact .contact-form textarea.input-control{
+    @apply h-[120px] resize-none pt-[15px];
+}
+
+.contact .contact-info .contact-info-item{
+  @apply mx-[30px] pb-[20px];
+}
+.contact .contact-info-item h3{
+  @apply text-xl capitalize font-semibold mb-[5px];
+}
+.contact .contact-info-item p{
+  @apply font-thin ml-[5px];
+}
+
+.contact-info-item .social-links{
+  @apply relative flex h-[60px];
+}
+
+.contact-info-item .social-links a {
+  @apply inline-flex relative items-center justify-center h-[40px] w-[40px] bg-white/25 rounded-full text-[color:var(--primary-color)] border border-white/40 mt-[10px] mr-[10px] hover:text-white   overflow-hidden shadow-lg duration-500 ease-in
+  
+  before:absolute before:top-[-110%] before:w-full before:h-full before:bg-[color:var(--primary-color)] before:z-0 before:duration-500 before:ease-in hover:before:top-0;
+  
+}
+.contact-info-item .social-links a:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 20px 20px rgba(0,0,0,0.4);
+  animation-duration: all 0s;
+}
+.contact-info-item .social-links a svg{
+  @apply relative z-10;
 }

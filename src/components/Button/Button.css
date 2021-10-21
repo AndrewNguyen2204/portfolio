@@ -1,13 +1,26 @@
 .btn {
   cursor: pointer;
-  padding: 5px 20px;
+  padding: 10px 28px;
   border-radius: 30px;
   text-transform: capitalize;
+  line-height:1.5;
+  font-weight:500;
+  vertical-align: middle;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+}
+.btn.btn--circle{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding:0;
+  display: flex;
+  justify-content:center;
+  align-items:center;
 }
 .btn--glass {
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   background: rgba(255, 255, 255, 0.25);
-  color: purple;
+  color: var(--primary-color);
   position: relative;
   transition: all 0.3s ease;
   overflow: hidden;
@@ -19,7 +32,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: purple;
+  background: var(--primary-color);
   z-index: -1;
   transition: width 0.3s;
 }

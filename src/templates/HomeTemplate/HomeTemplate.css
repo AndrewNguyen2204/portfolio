@@ -1,48 +1,53 @@
-.homeTemplate-container {
-  width: 100%;
-  min-height: 100vh;
-  background: url("../../assets/images/bg_1.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.template-container {
+  @apply relative w-full min-h-screen flex justify-center items-center py-10 overflow-y-auto;
+
+  background: linear-gradient(
+    to bottom right,
+    var(--light-pink),
+    var(--primary-color),
+    var(--light-blue)
+  );
 }
-.homeTemplate-content {
-  width: 80%;
-  height: 90vh;  
-  box-sizing: border-box;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 30px;
+.template-container:before,
+.template-container:after {
+  content: "";
+  @apply fixed top-0 left-0 w-full h-full;
+}
+.template-container:before {
+  background: linear-gradient(
+    to bottom left,
+    var(--green-yellow),
+    var(--light-blue),
+    var(--light-pink)
+  );
+  animation: pulse1 50s linear infinite;
+}
+.template-container:after {
+  background: var(--green-yellow);
+  animation: pulse2 50s linear infinite;
+}
+.template-content {
+  @apply w-[90%] sm:w-[85%] min-h-[90vh] rounded-[30px];
+  transition: border 0s;
   z-index: 2;
 }
 
-.planet {
-  position: absolute;
+@keyframes pulse1 {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.1;
+  }
 }
-.planet_1,
-.planet_3 {
-  z-index: 3;
-}
-.planet_2,
-.planet_4 {
-  z-index: 1;
-}
-.planet_1 {
-  left: 10%;
-  top: 25%;
-}
-.planet_2 {
-  left: 15%;
-  bottom: 15%;
-}
-.planet_3 {
-  right: 15%;
-  bottom: 15%;
-}
-.planet_4 {
-  left: 60%;
-  top: 3%;
+
+@keyframes pulse2 {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.1;
+  }
 }

@@ -1,0 +1,40 @@
+
+.header .toggler svg path{
+    stroke: #fff;
+    transition: stroke 0.5s ease;
+}
+.header .toggler:hover svg path{
+    stroke: var(--primary-color);
+    animation: none !important;
+   
+}
+.header .toggler svg path:nth-child(1) {    
+    animation: line-anim 3s linear infinite;
+   
+}
+.header .toggler svg path:nth-child(2) {
+   
+    animation: line-anim 3s 1s linear infinite;
+}
+.header .toggler svg path:nth-child(3) {
+  
+    animation: line-anim 3s 2s linear infinite;
+}
+
+
+
+@keyframes line-anim {
+    0%,100%{
+        stroke-dasharray: 50%;
+    }
+    50%{
+        stroke-dasharray: 100%;
+    }
+}
+
+@keyframes line-anim2{
+    to{
+        stroke-dashoffset: 0;
+       
+    }
+}

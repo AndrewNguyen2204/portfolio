@@ -1,11 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-
-
-
+/*
+------------------------------------
+Variants
+------------------------------------
+*/
+:root {
+  --primary-color: #e02f6b;
+  --text-color: #18293c;
+  --blue: #3187f8;
+  --light-blue: #47cbec;
+  --light-pink: #ea71ec;
+  --green-yellow: #cddc39;
+  --orange: #ffa500;
+}
 
 /*
 ------------------------------------
@@ -27,16 +39,31 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   overflow-x: hidden;
+  color: var(--text-color);
+  -webkit-tap-highlight-color: transparent;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
 }
-.glass{
-  background: linear-gradient(to right bottom,rgba(255,255,255,0.25),rgba(255,255,255,0.1));
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+.glass {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.1)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05), 
+  5px 5px 20px rgba(0, 0, 0, 0.05),
+    5px 5px 30px rgba(0, 0, 0, 0.05);
 }
 
 /* Page Title */
@@ -49,6 +76,8 @@ body {
 .page-title h2 {
   font-size: 40px;
   text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 /* Custom Scrollbar */

@@ -1,0 +1,105 @@
+.underlay-wrapper {
+  @apply fixed w-full h-full;
+}
+.underlay-wrapper .underlay-item {
+  @apply absolute;
+  box-shadow: inset -10px -10px 15px rgba(0, 0, 0, 0.05),
+    5px 15px 10px rgba(0, 0, 0, 0.1), 5px 15px 20px rgba(0, 0, 0, 0.05),
+    inset 10px 10px 15px rgba(255, 255, 255, 0.5);
+}
+.underlay-wrapper .underlay-item:first-child {
+  width: 70px;
+  height: 70px;
+  background: var(--orange);
+  transform: rotate(75deg);
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  animation: free-floating 20s linear infinite alternate-reverse;
+}
+.underlay-wrapper .underlay-item:nth-child(2) {
+  width: 100px;
+  height: 120px;
+  top: 50%;
+  left: 40%;
+  background: var(--primary-color);
+  border-radius: 59% 49% 49% 65% / 49% 50% 61% 63%;
+  animation: balloon 5s linear infinite alternate-reverse;
+}
+.underlay-wrapper .underlay-item:nth-child(3) {
+  @apply w-[80px] h-[80px] left-[10%] bottom-[10%] rounded-full;
+  background: linear-gradient(to right bottom, transparent,var(--blue));
+  animation: bubble 5s ease infinite;
+}
+.underlay-wrapper .underlay-item:nth-child(4) {
+  @apply w-[80px] h-[80px] left-[3%] bottom-[10%] rounded-full;
+  background: linear-gradient(to right bottom, transparent,var(--light-pink));
+
+  animation: bubble 5s 2s ease infinite;
+}
+.underlay-wrapper .underlay-item:nth-child(5) {
+  @apply w-[80px] h-[80px] left-[15%] bottom-[3%] rounded-full;
+  background: linear-gradient(to right bottom, transparent,var(--orange));
+  animation: bubble 5s 4s ease infinite;
+}
+.underlay-wrapper .underlay-item:last-child {
+  @apply w-[150px] h-[150px] right-[2%] top-[50%] bg-white/25 rounded-full;
+  transform: translateY(-50%);
+}
+/* Animation */
+
+@keyframes free-floating {
+  0% {
+    transform: rotate(75deg);
+    top: 5%;
+    left: 5%;
+  }
+  20% {
+    transform: rotate(190deg);
+    top: 15%;
+    left: 15%;
+    filter: hue-rotate(190deg);
+  }
+  40% {
+    transform: rotate(70deg);
+    top: 25%;
+    left: 35%;
+    filter: hue-rotate(70deg);
+  }
+  60% {
+    transform: rotate(120deg);
+    top: 15%;
+    left: 45%;
+    filter: hue-rotate(120deg);
+  }
+  80% {
+    transform: rotate(260deg);
+    top: 15%;
+    left: 65%;
+    filter: hue-rotate(240deg);
+  }
+  100% {
+    transform: rotate(75deg);
+    top: 35%;
+    left: 95%;
+  }
+}
+
+@keyframes balloon {
+  0% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes bubble {
+  0% {
+    transform: scale(0);
+  }  
+
+  100% {
+    transform: scale(1.5);
+  }
+}

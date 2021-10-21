@@ -1,4 +1,9 @@
-.drops {
+
+
+.drops { 
+  --large-size: 150px;
+  --medium-size: 100px;
+  --small-size: 50px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -6,8 +11,8 @@
 }
 .drop {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: var(--medium-size);
+  height:  var(--medium-size);
   background: transparent;
   border-radius: 52% 48% 35% 65% / 45% 47% 53% 55%;
   box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
@@ -16,38 +21,46 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
+.drop.drop-large{
+  width: var(--large-size);
+  height:  var(--large-size);
+}
+.drop.drop-small{
+  width: var(--small-size);
+  height:  var(--small-size);
+}
 .drop::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 15%;
+  height: 15%;
   position: absolute;
-  top: 25px;
-  left: 35px;
+  top: 18%;
+  left: 25%;
   background: linear-gradient(to right bottom, #fff, transparent);
   border-radius: 63% 37% 66% 34% / 57% 48% 52% 43%;
 }
 
 .drop::after {
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 7%;
+  height: 7%;
   position: absolute;
-  top: 25px;
-  left: 65px;
+  top: 18%;
+  left: 45%;
   background: linear-gradient(to right bottom, #fff, transparent);
   border-radius: 39% 61% 76% 24% / 70% 32% 68% 30%;
 }
 
 .drop:nth-child(2) {
-  transform: scale(0.5) translate(-200px, 180px);
+  transform: scale(0.5) translate(-130%, 120%);
   border-radius: 45% 55% 31% 69% / 36% 40% 60% 64%;
 }
 
 .drop:nth-child(3) {
-  transform: scale(0.5) translate(280px, 10px);
+  transform: scale(0.5) translate(180%, 2%);
   border-radius: 59% 41% 39% 61% / 48% 45% 55% 52%;
 }
 .drop:nth-child(4) {
-  transform: scale(0.35) translate(120px, -310px);
+  transform: scale(0.35) translate(80%, -200%);
   border-radius: 68% 32% 63% 37% / 41% 28% 72% 59%;
 }
