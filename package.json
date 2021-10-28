@@ -28,7 +28,8 @@
     "start": "cross-env TAILWIND_MODE=watch craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm build && cd build && copy index.html 200.html && surge . andrew-nh-portfolio.surge.sh"
   },
   "eslintConfig": {
     "extends": [

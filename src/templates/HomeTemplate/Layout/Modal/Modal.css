@@ -1,12 +1,10 @@
-.modal-content {
-  animation: ani 1s ease-in-out;
+.modal{
+    @apply z-10 p-5 sm:p-10 w-full flex justify-center items-center;
+}
+.modal-content{
+    @apply  p-5 sm:p-10  rounded-[30px] duration-500 min-w-[300px] max-w-[900px];
 }
 
-@keyframes ani {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.modal-button{
+    @apply absolute top-[-3%] right-[-3%] rounded-full backdrop-blur;
 }

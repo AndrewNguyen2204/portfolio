@@ -27,9 +27,8 @@
   animation: pulse2 50s linear infinite;
 }
 .template-content {
-  @apply w-[90%] sm:w-[85%] min-h-[90vh] rounded-[30px];
-  transition: border 0s;
-  z-index: 2;
+  @apply flex flex-col duration-300 w-[90%] sm:w-[85%] min-h-[90vh] rounded-[30px] p-1 sm:p-10 z-[2];
+ 
 }
 
 @keyframes pulse1 {
@@ -51,3 +50,4 @@
     opacity: 0.1;
   }
 }
+

@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Contact(props) {
     return (
-        <div className="contact container mx-auto flex-1">
+        <div className="contact container mx-auto flex-1  fade-in">
 
             <div className="page-title">
                 <h2 className="mt-10">contact</h2>
@@ -39,14 +39,14 @@ export default function Contact(props) {
                     </div>
                     <div className="contact-info-item">
                         <h3>phone</h3>
-                        <p>+84 905 098 925</p>
+                        <p>+84 905 098925</p>
                     </div>
                     <div className="contact-info-item">
                         <h3>follow me</h3>
                         <div className="social-links">
                             
                             <a href="/"><FontAwesomeIcon icon={['fab', "facebook-f"]} /></a>
-                            <a href="/"><FontAwesomeIcon icon={['fab', "instagram"]} /></a>
+                            <a href="/"><FontAwesomeIcon icon={['fab', "github"]} /></a>
                             <a href="/"><FontAwesomeIcon icon={['fab', "codepen"]} /></a>
                             <a href="/"><FontAwesomeIcon icon={['fab', "twitter"]} /></a>
                         </div>

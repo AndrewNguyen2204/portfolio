@@ -1,32 +1,26 @@
 .about .about-img,
 .about .about-text {
-  padding: 0 15px;
+  @apply px-[15px];
+ 
 }
 .about-img .img-box {
-  max-width: 380px;
-  margin: auto;
-  background: rgba(255, 255, 255, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  overflow: hidden;
+  @apply max-w-[400px] h-[500px] p-4 m-auto bg-white/25 border border-white/40 rounded-[10px] overflow-hidden;
+  
 
 }
-.about-img .img-box img {
-  width: 100%;
+.about-img .img-box video {
+  @apply w-full h-full;
+  object-fit: cover;
+  
   transform: rotateY(180deg);
 }
 .about-text h3 {
-  text-transform: capitalize;
-  font-size: 20px;
-  margin: 20px 0;
+  @apply capitalize text-[24px] my-[20px];
+  
 }
 .about-text .skill-item {
-  background: rgba(255, 255, 255, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 5px 15px;
-  text-transform: capitalize;
-  margin: 0 10px 10px 0;
-  border-radius:20px;
+  @apply bg-white/25 border border-white/40 py-[5px] px-[15px] capitalize rounded-[20px] mr-3 mb-3;  
+  
 }
 .about-button button {
   @apply mr-5 mb-5;

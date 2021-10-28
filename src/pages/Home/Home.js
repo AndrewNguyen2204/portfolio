@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { useHistory } from 'react-router';
 import Button from '../../components/Button/Button';
@@ -9,7 +10,7 @@ export default function Home(props) {
 
 
     return (
-        <section className="home">
+        <section className="home fade-in">
             <div className="home-content">
                 <div className="home-text">
                     <p>Hello, I'm</p>
@@ -40,6 +41,14 @@ export default function Home(props) {
                 <div className="home-img">
                     <div className="img-box">
                         <img src="./images/IMG_E0025.png" alt="IMG_6739.jpg" />
+
+                    </div>
+                    <div className="social-links">
+
+                        <a href="/"><FontAwesomeIcon icon={['fab', "facebook-f"]} /></a>
+                        <a href="/"><FontAwesomeIcon icon={['fab', "github"]} /></a>
+                        <a href="/"><FontAwesomeIcon icon={['fab', "codepen"]} /></a>
+                        <a href="/"><FontAwesomeIcon icon={['fab', "twitter"]} /></a>
                     </div>
                 </div>
             </div>

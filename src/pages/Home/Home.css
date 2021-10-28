@@ -1,28 +1,73 @@
 .home {
   flex: 1;
-  @apply container mx-auto flex justify-center items-center ;
+  @apply container mx-auto flex justify-center items-center;
 }
 
 .home .home-content {
   @apply w-full flex flex-col lg:flex-row items-center;
 }
-.home .home-img{
-  @apply w-full  lg:w-1/2 h-full items-center justify-center order-first lg:order-none mb-10 lg:mb-0;
-  
+
+/* home-avatar */
+
+.home .home-img {
+  @apply w-full relative  lg:w-1/2 h-full items-center justify-center order-first lg:order-none mb-10 lg:mb-0;
 }
 .home .home-img .img-box {
-  @apply w-[300px] sm:w-[350px]  h-[300px] sm:h-[350px] mx-auto rounded-full border-8 border-white/50 shadow-lg overflow-hidden;
-
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.1)
-  );
+  @apply relative w-[300px] sm:w-[350px]  h-[300px] sm:h-[350px] mx-auto rounded-full  pt-8 overflow-hidden cursor-pointer;
+}
+.home .home-img .img-box:before {
+  content: "";
+  @apply absolute top-0 left-0 w-full h-full rounded-full   bg-transparent border-8 border-transparent border-b-white/50 duration-300 z-10;
+  
+}
+.home .home-img .img-box:after {
+  content: "";
+  @apply absolute top-0 left-0 w-full h-full rounded-full shadow-lg border-8 border-white/50  bg-white/25 duration-300 z-0;
+  
+}
+.home .home-img:hover .img-box:after{
+  transform: scale(0.7);
+}
+.home .home-img:hover .img-box:before{
+  @apply border-b-transparent;
+  transform: scale(0.7);
+  
 }
 .home .img-box img {
-  @apply w-full;
-  transform: translateY(50px);
+  @apply relative w-full duration-300 z-[1];
+  
 }
+.home .home-img:hover .img-box img {
+  transform: translateY(-30px);
+}
+
+/* Home - social-links */
+.home .home-img .social-links{
+  @apply absolute top-[50%] right-[50%] flex flex-col z-20 duration-500;
+  transform: translate(50%,-50%);
+  pointer-events: none;
+}
+.home .home-img .social-links a{
+  @apply flex items-center justify-center h-[50px] w-[50px] bg-white/25  border border-white/40 opacity-0 rounded-full duration-500;
+
+  
+}
+.home .home-img .social-links svg{
+  @apply text-[24px];
+}
+
+.home .home-img .social-links a:hover svg{
+  @apply text-[color:var(--primary-color)];
+}
+.home .home-img:hover .social-links{
+  @apply right-[15%]; 
+  pointer-events:all;
+}
+.home .home-img:hover .social-links a{
+  @apply my-4 opacity-100;
+}
+/* Home-text */
+
 .home .home-text {
   @apply w-full lg:w-1/2 lg:pl-[50px] flex flex-col justify-center items-center lg:items-start;
 }

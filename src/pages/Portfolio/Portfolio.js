@@ -49,13 +49,13 @@ export default function Portfolio(props) {
 
     return (
 
-        <section className="portfolio">
+        <section className="portfolio fade-in">
             <div className="row">
                 <div className="page-title">
                     <h2 className="mt-10">recent work</h2>
                 </div>
             </div>
-            <div className="portfolio-content grid gap-3 lg:gap-6 grid-flow-col auto-cols-[95%] lg:grid-flow-row lg:grid-cols-3 overflow-hidden overflow-x-auto">
+            <div className="portfolio-content grid gap-3 lg:gap-6 grid-flow-col auto-cols-[95%] md:grid-flow-row md:grid-cols-2 lg:grid-cols-3 overflow-hidden overflow-x-auto">
 
                 {renderCard()}
 

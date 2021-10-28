@@ -38,8 +38,7 @@
 }
 .contact-info-item .social-links a:hover{
   transform: translateY(-10px);
-  box-shadow: 0 20px 20px rgba(0,0,0,0.4);
-  animation-duration: all 0s;
+  box-shadow: 0 20px 20px rgba(0,0,0,0.4); 
 }
 .contact-info-item .social-links a svg{
   @apply relative z-10;

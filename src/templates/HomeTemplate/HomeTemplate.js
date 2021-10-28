@@ -31,9 +31,9 @@ export const HomeTemplate = (props) => {
 
     const { view } = useSelector(state => state.ModalReducer);
 
-    const {pathname} = useLocation();
+    const { pathname } = useLocation();
 
-    
+
 
     return <Route {...restProps} render={propsRoute => {
 
@@ -59,11 +59,12 @@ function Content({ view, propsRoute, Component }) {
     return (
         <>
             {view ? <Modal /> : (
-                <div className="template-content glass p-1 sm:p-10 flex flex-col duration-300">
+                <div className="template-content glass fade-in" >
                     <Header />
                     <Component {...propsRoute} />
                 </div>
-            )}
+            )
+            }
 
         </>
     )

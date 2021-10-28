@@ -8,20 +8,28 @@ export default function About(props) {
     const history = useHistory();
 
     return (
-        <div className="about container mx-auto flex-1">
+        <div className="about container mx-auto flex-1 fade-in">
             <div className="row">
-                <div className="page-title mt-10">
+                <div className="page-title">
                     <h2>about me</h2>
                 </div>
             </div>
             <div className="row">
-                <div className="about-img w-full lg:w-1/2 hidden sm:block">
+                <div className="about-img w-full lg:w-1/2 hidden sm:block mb-10">
                     <div className="img-box">
-                        <img src="./images/IMG_E0025.png" alt="avatar" />
+                        <video autoPlay loop muted src="./images/video(5).mp4" type="video/mp4" />
                     </div>
                 </div>
-                <div className="about-text w-full lg:w-1/2 mt-10 lg:mt-0">
-                    <p className="break-word text-justify">Summary templates allow anyone to quickly create outlines and abridgments of lengthy tomes, books, research studies, business financial information, contracts, and other sources of lengthy pieces of information. So if you want more downloadable examples and more information on how to create and use printable summary templates, read the rest of this article and be enlightened</p>
+                <div className="about-text w-full lg:w-1/2">
+                    <p className="break-word text-justify">
+
+                        I'm a web developer, doing mainly front-end, passionate about CSS, animations, and creative coding. I have an entrepreneurial mindset, a pathological curiosity about new technologies, and a constant desire to learn new things makes…
+ 
+                        <br />
+
+                        Professional, creativity, responsible, self-discipline and ability to work hard under high pressure with 7+ years of experience working in the customer service of many different banks.
+                    </p>
+
                     <h3 className="font-semibold">Skills</h3>
                     <div className="skills row">
                         <div className="skill-item">html</div>
@@ -33,11 +41,11 @@ export default function About(props) {
                     </div>
                     <div className="about-button row mt-5">
                         <Button type='btn--glass'>download cv</Button>
-                        <Button 
-                        type='btn--glass'
-                        onClick={()=>{
-                            history.push('/portfolio');
-                        }}
+                        <Button
+                            type='btn--glass'
+                            onClick={() => {
+                                history.push('/portfolio');
+                            }}
                         >
                             portfolio
                         </Button>

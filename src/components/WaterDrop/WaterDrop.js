@@ -11,7 +11,7 @@ export default function WaterDrop(props) {
 
 
 
-    const checkSize = size ? `drop drop-${size}` : 'drop drop-normal';
+    const checkSize = size ? `drop drop-${size}` : 'drop drop-medium';
 
 
 

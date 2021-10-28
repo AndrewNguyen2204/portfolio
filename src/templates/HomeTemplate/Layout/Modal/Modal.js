@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from '../../../../components/Button/Button';
@@ -17,15 +18,15 @@ export default function Modal() {
 
     return (
         <div
-            className="modal z-10 p-5 sm:p-10 w-full max-h-max flex justify-center items-center"
+            className="modal"
             onClick={handleClick}
         >
-            <div className="modal-content glass p-5 sm:p-10  rounded-[30px] duration-500 min-w-[300px] max-w-[900px]">
+            <div className="modal-content glass fade-in">
 
                 {content}
 
-                <div className="modal-button absolute top-[-25px] right-[-25px] rounded-full backdrop-blur">
-                    <Button onClick={handleClick} circle>X</Button>
+                <div className="modal-button">
+                    <Button onClick={handleClick} circle><FontAwesomeIcon icon="times" /></Button>
                 </div>
 
             </div>

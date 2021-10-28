@@ -1,44 +1,17 @@
 .btn {
-  cursor: pointer;
-  padding: 10px 28px;
-  border-radius: 30px;
-  text-transform: capitalize;
-  line-height:1.5;
-  font-weight:500;
-  vertical-align: middle;
-  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+  @apply cursor-pointer py-[10px] px-[28px] rounded-[30px] capitalize font-medium text-base align-middle shadow-md;
 }
-.btn.btn--circle{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  padding:0;
-  display: flex;
-  justify-content:center;
-  align-items:center;
+.btn.btn--circle {
+  @apply w-[40px] h-[40px] md:w-[50px] md:h-[50px] rounded-full p-0 flex justify-center items-center;
 }
 .btn--glass {
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  background: rgba(255, 255, 255, 0.25);
-  color: var(--primary-color);
-  position: relative;
-  transition: all 0.3s ease;
-  overflow: hidden;
+  @apply relative border border-white/40 bg-white/25 text-[color:var(--primary-color)] duration-300 overflow-hidden hover:text-white hover:bg-transparent;
 }
 .btn--glass:after {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: var(--primary-color);
-  z-index: -1;
-  transition: width 0.3s;
+  @apply absolute top-0 left-0 w-0 h-full bg-[color:var(--primary-color)] duration-300 z-[-1];
 }
-.btn--glass:hover {
-  color: white;
-}
+
 .btn--glass:hover:after {
-  width: 100%;
+  @apply w-full;
 }
