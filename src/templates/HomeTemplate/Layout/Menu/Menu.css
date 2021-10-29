@@ -17,18 +17,17 @@
   @apply relative list-none m-[20px] cursor-pointer;
 }
 .menu-items .menu-item a {
-  @apply relative top-0 w-full h-full sm:w-[100px] sm:h-[100px] lg:w-[150px] lg:h-[150px] flex justify-center items-center text-[4rem] sm:rounded-[10px] bg-transparent sm:bg-white/25 border border-transparent sm:border-white/40  z-10 sm:z-[-1]  overflow-hidden cursor-pointer;
+  @apply relative w-full h-full sm:w-[100px] sm:h-[100px] lg:w-[150px] lg:h-[150px] flex justify-center items-center text-[4rem] sm:rounded-[10px] bg-transparent sm:bg-white/25 border border-transparent sm:border-white/40  z-10 sm:z-[-1]  overflow-hidden cursor-pointer;
   backdrop-filter: blur(10px);
-  transition: top 0.5s, z-index 0s, transform 0.5s;
-  transition-delay: 0.5s, 0s, 0s;
+  transition: z-index 0s, transform 0.5s;
+  
 
 }
 @media (min-width: 640px) {
   .menu-items .menu-item:hover a{
-    transition-delay: 0s, 0.5s, 0.5s;
-    top: -50px;
-    transform: translateY(50px);
-    -webkit-transform: translateY(50px);
+    /* transition-delay: 0.5s, 0.5s;     */
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
     z-index: 11;
   }
 }

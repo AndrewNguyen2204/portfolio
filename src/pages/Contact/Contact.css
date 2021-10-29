@@ -3,10 +3,11 @@
 }
 
 .contact .contact-form .input-control {
-  @apply block w-full h-[50px] rounded-[25px] bg-white/25 px-[20px] text-[color:var(--text-color)] font-normal border border-transparent duration-300 ease-in-out;
+  @apply block w-full h-[50px] rounded-[25px] bg-white/25 px-[20px] text-[color:var(--text-color)] font-normal border border-transparent outline-none duration-300 ease-in-out;
 }
 .contact .contact-form .input-control:focus, .contact .contact-form .input-control:hover{
     @apply border-white/60 shadow-lg bg-white/40;
+    
 }
 .contact .contact-form .input-control:placeholder {
   @apply opacity-80 font-light  text-[color:var(--text-color)];
