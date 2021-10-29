@@ -2,7 +2,7 @@
     @apply z-10 p-5 sm:p-10 w-full flex justify-center items-center;
 }
 .modal-content{
-    @apply  p-5 sm:p-10  rounded-[30px] duration-500 min-w-[300px] max-w-[900px];
+    @apply  relative p-5 sm:p-10  rounded-[30px] duration-500 min-w-[300px] max-w-[900px];
 }
 
 .modal-button{

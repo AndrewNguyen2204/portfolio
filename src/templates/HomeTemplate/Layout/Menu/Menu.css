@@ -20,12 +20,9 @@
   @apply relative w-full h-full sm:w-[100px] sm:h-[100px] lg:w-[150px] lg:h-[150px] flex justify-center items-center text-[4rem] sm:rounded-[10px] bg-transparent sm:bg-white/25 border border-transparent sm:border-white/40  z-10 sm:z-[-1]  overflow-hidden cursor-pointer;
   backdrop-filter: blur(10px);
   transition: z-index 0s, transform 0.5s;
-  
-
 }
 @media (min-width: 640px) {
-  .menu-items .menu-item:hover a{
-    /* transition-delay: 0.5s, 0.5s;     */
+  .menu-items .menu-item:hover a {
     transform: translateY(-50px);
     -webkit-transform: translateY(-50px);
     z-index: 11;
@@ -37,7 +34,7 @@
 /* Mobile */
 
 .menu .menu-items .menu-item a span {
-  @apply text-6xl font-semibold text-white capitalize inline-block sm:hidden duration-300;
+  @apply text-4xl font-semibold text-white capitalize inline-block sm:hidden duration-300;
 }
 .menu .menu-items .menu-item.active a span,
 .menu .menu-items .menu-item:hover a span {
@@ -55,13 +52,15 @@
 }
 /* Tablet, PC, Laptop  */
 
+.menu .menu-items .menu-item a svg {
+  @apply text-white text-[48px] lg:text-[64px] duration-500;
+}
+
 .menu .menu-items .menu-item.active svg,
 .menu .menu-items .menu-item:hover svg {
   @apply text-[color:var(--primary-color)];
 }
-.menu .menu-items .menu-item a svg {
-  @apply text-white duration-500;
-}
+
 
 .menu .menu-items .menu-item a:before {
   content: "";
