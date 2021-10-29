@@ -17,17 +17,20 @@
   @apply relative list-none m-[20px] cursor-pointer;
 }
 .menu-items .menu-item a {
-  @apply relative top-[-100px] w-full h-full sm:w-[100px] sm:h-[100px] lg:w-[150px] lg:h-[150px] flex justify-center items-center text-[4rem] sm:rounded-[10px] bg-transparent sm:bg-white/25 border border-transparent sm:border-white/40 sm:shadow sm:backdrop-blur z-10 sm:z-[-1]  overflow-hidden cursor-pointer opacity-0;
+  @apply relative top-0 w-full h-full sm:w-[100px] sm:h-[100px] lg:w-[150px] lg:h-[150px] flex justify-center items-center text-[4rem] sm:rounded-[10px] bg-transparent sm:bg-white/25 border border-transparent sm:border-white/40  z-10 sm:z-[-1]  overflow-hidden cursor-pointer;
   backdrop-filter: blur(10px);
   transition: top 0.5s, z-index 0s, transform 0.5s, opacity 0.5s;
   transition-delay: 0.5s, 0s, 0s, 0.2s;
 }
-.menu.open .menu-items .menu-item a {
-  @apply top-0 opacity-100;
-
-  transition-duration: all 0s;
+@media (min-width: 640px) {
+  .menu-items .menu-item:hover a{
+    top: -50px;
+    transform: translateY(50px);
+    transition-delay: 0s, 0.5s, 0.5s, 0s;
+    z-index: 11;
+  }
 }
-.menu.open .menu-items .menu-item.active a {
+.menu-items .menu-item.active a {
   z-index: 11;
 }
 /* Mobile */
@@ -50,16 +53,14 @@
 }
 /* Tablet, PC, Laptop  */
 
-.menu .menu-items .menu-item.active svg {
-  color: var(--primary-color);
+.menu .menu-items .menu-item.active svg,.menu .menu-items .menu-item:hover svg {
+  @apply text-[color:var(--primary-color)];
+  
 }
 .menu .menu-items .menu-item a svg {
-  color: #fff;
-  transition: all 0.5s;
+  @apply text-white duration-500;  
 }
-.menu .menu-items .menu-item:hover a svg {
-  color: var(--primary-color);
-}
+
 .menu .menu-items .menu-item a:before {
   content: "";
   @apply absolute hidden sm:block top-0 left-0 w-[100px] h-full bg-white/50 duration-500;
@@ -90,11 +91,4 @@
   @apply text-[color:var(--primary-color)];
 }
 
-@media (min-width: 640px) {
-  .menu.open .menu-items .menu-item:hover a {
-    transition-delay: 0s, 0.5s, 0.5s, 0s;
-    top: -50px;
-    transform: translateY(50px);
-    z-index: 11;
-  }
-}
+
