@@ -1,5 +1,5 @@
 .underlay-wrapper {
-  @apply fixed w-full h-full;
+  @apply fixed w-full h-full top-0 left-0;
 }
 .underlay-wrapper .underlay-item {
   @apply absolute;
