@@ -17,14 +17,14 @@ export default function About(props) {
             <div className="row">
                 <div className="about-img w-full lg:w-1/2 hidden sm:block mb-10">
                     <div className="img-box">
-                        <video autoPlay loop muted src="./images/video(5).mp4" type="video/mp4" />
+                        <img src="./images/IMG_E0025.png" alt="IMG_6739.jpg" />
                     </div>
                 </div>
                 <div className="about-text w-full lg:w-1/2">
                     <p className="break-word text-justify">
 
                         I'm a web developer, doing mainly front-end, passionate about CSS, animations, and creative coding. I have an entrepreneurial mindset, a pathological curiosity about new technologies, and a constant desire to learn new things makes…
- 
+
                         <br />
 
                         Professional, creativity, responsible, self-discipline and ability to work hard under high pressure with 7+ years of experience working in the customer service of many different banks.
@@ -40,7 +40,18 @@ export default function About(props) {
 
                     </div>
                     <div className="about-button row mt-5">
-                        <Button type='btn--glass'>download cv</Button>
+                        <Button type='btn--glass'>
+
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://drive.google.com/file/d/1pTZGk8nCzVpFwp__So9vR9RiDi5ugyWX/view?usp=sharing"
+                                download
+                            >
+                                download cv
+                            </a>
+
+                        </Button>
                         <Button
                             type='btn--glass'
                             onClick={() => {
