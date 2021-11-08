@@ -34,7 +34,7 @@ export default function Home(props) {
                             type='btn--glass'
                             className="mt-5 sm:mt-0"
                         >
-                            Porfolio
+                           Porfolio
                         </Button>
                     </div>
                 </div>

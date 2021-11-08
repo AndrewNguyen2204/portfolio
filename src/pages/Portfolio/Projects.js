@@ -1,4 +1,4 @@
-export const Projects = [
+export const PROJECTS = [
     {
         id: 'portfolio',
         name: 'portfolio website',
@@ -12,63 +12,17 @@ export const Projects = [
 
     },
     {
-        id: 'P2',
-        name: 'Project B Project A is the portfolio websites where shows all my recent work Project A is the portfolio websites where shows all my recent work',
-        srcImg: 'https://picsum.photos/700/500',
+        id: 'bookingTicket',
+        name: 'Booking Ticket Online Website',
+        srcImg: './images/booking-ticket-website.png',
         created: '22 June 2021',
-        technologies: 'Html, css ,...',
-        role: 'prontend',
-        url: 'http://example.com',
-        source: 'http://example.com',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, reiciendis?'
-
-    },
-    {
-        id: 'portfolio',
-        name: 'portfolio website',
-        srcImg: './images/portfolio-website.png',
-        created: '1 Oct 2021',
-        technologies: 'Html, Css (tailwindcss with JIT mode) , Javascript (ReactJs) ',
+        technologies: 'Html, Css (tailwindcss with JIT mode) , Javascript (ReactJs), Redux, Redux-thunk, RESfull Api, ...',
         role: 'Frontend',
-        url: 'http://example.com',
-        source: 'https://github.com/AndrewNguyen2204/portfolio',
+        url: 'http:/http://andrew-booking-ticket-online.surge.sh/',
+        source: 'https://github.com/AndrewNguyen2204/bookingticket',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, reiciendis?'
 
     },
-    {
-        id: 'P2',
-        name: 'Project B Project A is the portfolio websites where shows all my recent work Project A is the portfolio websites where shows all my recent work',
-        srcImg: 'https://picsum.photos/700/500',
-        created: '22 June 2021',
-        technologies: 'Html, css ,...',
-        role: 'prontend',
-        url: 'http://example.com',
-        source: 'http://example.com',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, reiciendis?'
-
-    }, {
-        id: 'portfolio',
-        name: 'portfolio website',
-        srcImg: './images/portfolio-website.png',
-        created: '1 Oct 2021',
-        technologies: 'Html, Css (tailwindcss with JIT mode) , Javascript (ReactJs) ',
-        role: 'Frontend',
-        url: 'http://example.com',
-        source: 'https://github.com/AndrewNguyen2204/portfolio',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, reiciendis?'
-
-    },
-    {
-        id: 'P2',
-        name: 'Project B Project A is the portfolio websites where shows all my recent work Project A is the portfolio websites where shows all my recent work',
-        srcImg: 'https://picsum.photos/700/500',
-        created: '22 June 2021',
-        technologies: 'Html, css ,...',
-        role: 'prontend',
-        url: 'http://example.com',
-        source: 'http://example.com',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, reiciendis?'
-
-    },
+   
 
 ]

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Portfolio.css';
 import Button from '../../components/Button/Button';
-import { Projects } from './Projects';
+import { PROJECTS } from './Projects';
 import { useDispatch } from 'react-redux';
 import { openModalAction } from '../../redux/actions/ModalAction';
 
@@ -14,7 +14,7 @@ export default function Portfolio(props) {
     const renderCard = () => {
 
 
-        return Projects.map((project) => {
+        return PROJECTS.map((project) => {
 
             const handleClick = () => {
                 dispatch(openModalAction(<ProjectDetail project={project} />));
