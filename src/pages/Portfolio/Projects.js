@@ -18,7 +18,7 @@ export const PROJECTS = [
         created: '22 June 2021',
         technologies: 'Html, Css (tailwindcss with JIT mode) , Javascript (ReactJs), Redux, Redux-thunk, RESfull Api, ...',
         role: 'Frontend',
-        url: 'http:/http://andrew-booking-ticket-online.surge.sh',
+        url: 'http://andrew-booking-ticket-online.surge.sh',
         source: 'https://github.com/AndrewNguyen2204/bookingticket',
         description: 'React Website with homepage, dashboard, realtime booking ticket using SignalR ...'
 
