@@ -27,9 +27,10 @@
   animation: pulse2 50s linear infinite;
 }
 .template-content {
-  @apply flex flex-col duration-300 w-[90%] sm:w-[85%] min-h-[90vh] rounded-[30px] p-1 sm:p-10 z-[2];
+  @apply relative flex flex-col duration-300 w-[90%] sm:w-[85%] min-h-[90vh] rounded-[30px] p-1 sm:p-10 z-[2];
  
 }
+
 
 @keyframes pulse1 {
   0%,

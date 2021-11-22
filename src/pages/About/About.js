@@ -1,11 +1,38 @@
 import React from 'react';
 import { useHistory } from 'react-router';
 import Button from '../../components/Button/Button';
+import TiltBox from '../../components/TiltBox/TiltBox';
 import './About.css';
+import { SOCIAL_LINKS } from '../Home/SOCIAL_LINKS';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+const options = {
+    scale: 1.1,
+    speed: 500,
+    max: 30,
+    glare: true,
+    "max-glare": 1
+}
+
+
 export default function About(props) {
 
 
     const history = useHistory();
+
+
+
+    const renderSocialLinks = () => {
+        return SOCIAL_LINKS.map(link => {
+            return (
+                <a key={link.key} href={link.href} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={link.icon} /></a>
+
+            )
+        })
+    }
+
+
+
 
     return (
         <div className="about container mx-auto flex-1 fade-in">
@@ -16,9 +43,24 @@ export default function About(props) {
             </div>
             <div className="row">
                 <div className="about-img w-full lg:w-1/2 hidden sm:block mb-10">
-                    <div className="img-box">
+                    <TiltBox className="img-box" options={options}>
+                        <div className="box-content">
+                            <h3 className="text-2xl uppercase text-center text-white"><span className="font-thin">Nguyen Huu</span> Minh Anh</h3>
+
+                            <p className="text-white text-center">Frontend developer</p>
+
+                            <div className="social-links">
+
+                                {renderSocialLinks()}
+
+
+                            </div>
+
+                        </div>
                         <img src="./images/IMG_E0025.png" alt="IMG_6739.jpg" />
-                    </div>
+
+
+                    </TiltBox>
                 </div>
                 <div className="about-text w-full lg:w-1/2">
                     <p className="break-word text-justify">

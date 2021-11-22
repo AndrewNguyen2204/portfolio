@@ -37,7 +37,15 @@
   scroll-snap-align: start;
 }
 .portfolio-item-thumbnail{
-  @apply w-full h-[300px] bg-white/25 border border-white/40 p-2 rounded-md flex-shrink-0 overflow-hidden;
+  @apply w-full h-[250px] bg-white/25 border border-white/40 p-2 rounded-md flex-shrink-0 overflow-hidden;
+}
+.portfolio-item-thumbnail .project-img {
+  @apply w-full h-full  rounded-[inherit];  
+
+}
+
+.portfolio-item-thumbnail .project-img:hover{
+  @apply bg-bottom;
 }
 .portfolio-item-info{
   @apply flex-1 mt-auto flex flex-col justify-between items-center p-5 lg:items-start;

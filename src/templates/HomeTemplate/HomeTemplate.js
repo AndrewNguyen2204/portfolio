@@ -60,6 +60,7 @@ function Content({ view, propsRoute, Component }) {
         <>
             {view ? <Modal /> : (
                 <div className="template-content glass fade-in" >
+                   
                     <Header />
                     <Component {...propsRoute} />
                 </div>

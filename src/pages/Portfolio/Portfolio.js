@@ -31,7 +31,7 @@ export default function Portfolio(props) {
                         <img
                             src={project.srcImg}
                             alt={project.name}
-                            className="w-full h-full rounded-[inherit]" />
+                            className="project-img" />
                     </div>
                     <div className="portfolio-item-info flex-1">
                         <h3>{project.name}</h3>
