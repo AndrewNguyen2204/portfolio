@@ -37,8 +37,18 @@
   scroll-snap-align: start;
 }
 .portfolio-item-thumbnail{
-  @apply bg-white/25 border border-white/40 p-2 rounded-md flex-shrink-0 overflow-hidden;
+  @apply w-full h-[300px] bg-white/25 border border-white/40 p-2 rounded-md flex-shrink-0 overflow-hidden;
 }
 .portfolio-item-info{
   @apply flex-1 mt-auto flex flex-col justify-between items-center p-5 lg:items-start;
+}
+
+.portfolio-item-info h3 {
+   /* text-truncate */
+   display: -webkit-box;
+   -webkit-line-clamp: 1;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   word-break: break-all;
 }

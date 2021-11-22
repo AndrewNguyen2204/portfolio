@@ -4,11 +4,11 @@ export const PROJECTS = [
         name: 'portfolio website',
         srcImg: './images/portfolio-website.png',
         created: '1 Oct 2021',
-        technologies: 'Html, Css (tailwindcss with JIT mode) , Javascript (ReactJs) ',
+        technologies: 'Html, Css (tailwindcss with JIT mode) , Javascript (ReactJs), UI/UX (glassmorphism)',
         role: 'Frontend',
-        url: 'http://example.com',
+        url: 'https://andrew-nh-portfolio.netlify.app',
         source: 'https://github.com/AndrewNguyen2204/portfolio',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, reiciendis?'
+        description: 'Glassmorphism Porflio Website to  show my recent work'
 
     },
     {
@@ -18,9 +18,21 @@ export const PROJECTS = [
         created: '22 June 2021',
         technologies: 'Html, Css (tailwindcss with JIT mode) , Javascript (ReactJs), Redux, Redux-thunk, RESfull Api, ...',
         role: 'Frontend',
-        url: 'http:/http://andrew-booking-ticket-online.surge.sh/',
+        url: 'http:/http://andrew-booking-ticket-online.surge.sh',
         source: 'https://github.com/AndrewNguyen2204/bookingticket',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, reiciendis?'
+        description: 'React Website with homepage, dashboard, realtime booking ticket using SignalR ...'
+
+    },
+    {
+        id: 'travelPage',
+        name: 'Travel Landing Page',
+        srcImg: './images/travel-landing-page.png',
+        created: '20 November 2021',
+        technologies: 'Html, Css (styled-components) , Javascript (ReactJs), react-scroll, ...',
+        role: 'Frontend',
+        url: 'https://andrew-travel-page.netlify.app',
+        source: 'https://github.com/AndrewNguyen2204/travel-landing-page',
+        description: 'React Lading Page using Styled Components and Smooth Scroll'
 
     },
    

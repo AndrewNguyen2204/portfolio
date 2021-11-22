@@ -33,7 +33,7 @@ export default function Portfolio(props) {
                             alt={project.name}
                             className="w-full h-full rounded-[inherit]" />
                     </div>
-                    <div className="portfolio-item-info">
+                    <div className="portfolio-item-info flex-1">
                         <h3>{project.name}</h3>
                         <div>
                             <Button onClick={handleClick}>details</Button>

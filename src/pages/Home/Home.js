@@ -3,10 +3,23 @@ import React from 'react';
 import { useHistory } from 'react-router';
 import Button from '../../components/Button/Button';
 import './Home.css';
+import {SOCIAL_LINKS} from './SOCIAL_LINKS';
+
+
 
 export default function Home(props) {
 
     const history = useHistory();
+
+
+    const renderSocialLinks = () =>{
+        return SOCIAL_LINKS.map(link =>{
+            return (
+                <a key={link.key} href={link.href} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={link.icon} /></a>
+
+            )
+        })
+    }
 
 
     return (
@@ -45,10 +58,9 @@ export default function Home(props) {
                     </div>
                     <div className="social-links">
 
-                        <a href="/"><FontAwesomeIcon icon={['fab', "facebook-f"]} /></a>
-                        <a href="/"><FontAwesomeIcon icon={['fab', "github"]} /></a>
-                        <a href="/"><FontAwesomeIcon icon={['fab', "codepen"]} /></a>
-                        <a href="/"><FontAwesomeIcon icon={['fab', "twitter"]} /></a>
+                        {renderSocialLinks()}
+
+                        
                     </div>
                 </div>
             </div>
