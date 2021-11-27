@@ -32,7 +32,7 @@ export const PROJECTS = [
         role: 'Frontend',
         url: 'https://andrew-travel-page.netlify.app',
         source: 'https://github.com/AndrewNguyen2204/travel-landing-page',
-        description: 'React Lading Page using Styled Components and Smooth Scroll'
+        description: 'React Landing Page using Styled Components and Smooth Scroll'
 
     },
    
